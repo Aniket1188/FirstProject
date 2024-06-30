@@ -1,0 +1,46 @@
+<!--<h2>This is genrated component user profile</h2>
+<h3>Name {{name}}</h3>
+<h3> Status  {{status}}</h3>
+<h3>Mobile Number {{Mobile}}</h3>
+
+<button [disabled]="isbtndisable">click me</button>
+<h2>Inputvalue = {{inputvalue}}</h2> -->
+<!--<input type="text" [value]="inputvalue"    (input)="onchange($event)"> --> 
+<!--<input type="text" [(ngModel)]="inputvalue">
+
+<div>
+    @for(array of Users;track array.name){
+        <h3>Name == {{array.name}}  Status == {{array.status?"Single":"Engage"}} Mobile Number == {{array.Mobile}}</h3>
+    }
+</div>
+<h1>Show the use of at the rate if</h1>
+<div>
+    @for(array of Users;track array.name){
+     @if(array.status==true){
+        <h3>Name == {{array.name}}  Status == {{array.status?"Single":"Engage"}} Mobile Number == {{array.Mobile}}</h3>
+    }}
+</div>
+<h1>How to use ngfor will see</h1>
+<div *ngFor="let array of Users">
+    <h3>Name == {{array.name}}  Status == {{array.status?"Single":"Engage"}} Mobile Number == {{array.Mobile}}</h3>
+</div>
+<h2>How to use ngfor and ngif will see</h2>
+<div *ngFor="let array of Users">
+    <h3 *ngIf="array.status==true">Name == {{array.name}}  Status == {{array.status?"Single":"Engage"}} Mobile Number == {{array.Mobile}}</h3>
+</div>
+<h3>Lets see how to use directive and ng template</h3>
+<div *ngFor="let array of Users">
+    <h3 *ngIf="array.status==true;else elseblock">Name == {{array.name}}  Status == {{array.status?"Single":"Engage"}} Mobile Number == {{array.Mobile}}</h3>
+    <ng-template #elseblock >
+        <h3>  Name == {{array.name}}  Status == {{array.status?"Single":"Engage"}} Mobile Number == {{array.Mobile}}</h3>
+    </ng-template>
+</div> -->
+<!-- <h2> User  {{name}}</h2> 
+<h3> {{username}}</h3> 
+<h2> Name -  {{name}}   status - {{issingle?"Single":"Married"}}  Salary - {{salary}}</h2>
+<button (click)="senddata()">SendData</button> -->
+
+<h2 appHighlight>This is genrated component user profile</h2>
+<h3>Name ----- {{name|uppercase}}    Salary -----  {{salary|currency:"INR"}}    Mobile ---- {{mobile|countrycodes}}</h3>
+<h3>Name {{name|lowercase}} Salary  {{salary|currency}} </h3>
+<h2>{{mobile|countrycodes}}</h2>
